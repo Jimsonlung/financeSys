@@ -2,8 +2,10 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>欢迎登录住院收费后台管理系统</title>
+    <title>欢迎登录住院收费后台管理系统</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <script language="JavaScript" src="js/jquery.js"></script>
+    <script>
         $(function () {
             $('.loginbox').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
             $(window).resize(function () {
@@ -32,17 +34,11 @@
     </ul>
 </div>
 
-<span>欢迎登录住院收费后台管理界面平台</span>
-    <ul>
-    <li><a href="#">回首页</a></li>
-    <li><a href="#">帮助</a></li>
-    <li><a href="#">关于</a></li>
-    </ul>    
-    </div>
-    
-    <div class="loginbody">
-    
-    <span class="systemlogo"></span>     <div class="loginbox">
+
+<div class="loginbody">
+
+    <span class="systemlogo"></span>
+    <div class="loginbox">
 
         <ul>
             <li><input name="" type="text" class="loginuser" value="admin" onclick="JavaScript:this.value=''"/></li>
@@ -55,6 +51,7 @@
 
 
     </div>
-    </div>
-    <div class="loginbm">版权所有  桂林医学院15信管 林桥丽1592058 江丹1592032 李丽婷1592040</div></body>
+</div>
+<div class="loginbm">版权所有 桂林医学院15信管 林桥丽1592058 江丹1592032 李丽婷1592040</div>
+</body>
 </html>
