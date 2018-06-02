@@ -5,39 +5,26 @@
     <title>欢迎登录住院收费后台管理系统</title>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
-    <script src="bootstrap-3.3.7-dist/css/bootstrap-theme.css"/>
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
 
 </head>
 
 
 <body>
 
-<div class="place">
-    <span>位置：</span>
-    <ul class="placeul">
-        <li><a href="#">首页</a></li>
-        <li><a href="#">数据表</a></li>
-        <li><a href="#">基本内容</a></li>
-    </ul>
+<div id="top" >
+    <div style="background-color: #449d44">
+
+    </div>
 </div>
 
 <div class="container-fluid">
     <div style="margin: 0 30px">
-        <br>
-        <div class="row">
-            <div>
-                <input class="btn btn-default btn-sm" type="button" value="单号">
-                <input class="btn btn-default btn-sm" type="button" value="姓名">
-                <input class="btn btn-default btn-sm" type="button" value="年龄">
-                <input class="btn btn-default btn-sm" type="button" value="医生">
-                <input class="btn btn-default btn-sm" type="button" value="住院日">
-                <input class="btn btn-default btn-sm" type="button" value="科室">
-                <input class="btn btn-default btn-sm" type="button" value="病区">
-            </div>
-
+        <div class="row" style="margin: 5px 30px;position:fixed;right:0px;top:0px;z-index:999;">
+            <input class="btn btn-primary btn-sm" type="submit" value="保存">
         </div>
-
+        <br>
+        <br>
 
         <!--表单录入-->
         <form class="form-inline">
@@ -237,6 +224,7 @@
 
         </form>
     </div>
+
 
 
 </div>
