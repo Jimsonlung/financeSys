@@ -1,5 +1,8 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>欢迎登录住院收费后台管理系统</title>
@@ -39,16 +42,16 @@
 
     <span class="systemlogo"></span>
     <div class="loginbox">
-
-        <ul>
-            <li><input name="" type="text" class="loginuser" value="admin" onclick="JavaScript:this.value=''"/></li>
-            <li><input name="" type="text" class="loginpwd" value="密码" onclick="JavaScript:this.value=''"/></li>
-            <li><input name="" type="button" class="loginbtn" value="登录"
-                       onclick="javascript:window.location='main.html'"/><label><input name="" type="checkbox" value=""
-                                                                                       checked="checked"/>记住密码</label><label><a
-                    href="#">忘记密码？</a></label></li>
-        </ul>
-
+        <form action="/login.do" method="post">
+            <ul>
+                <li><input name="username" type="text" class="loginuser" onclick="JavaScript:this.value=''"/></li>
+                <li><input name="password" type="password" class="loginpwd"  onclick="JavaScript:this.value=''"/></li>
+                <li><input name="" type="submit" class="loginbtn" value="登录"
+                           onclick="javascript:window.location='main.html'"/><label><input name="" type="checkbox" value=""
+                                                                                           checked="checked"/>记住密码</label><label><a
+                        href="#">忘记密码？</a></label></li>
+            </ul>
+        </form>
 
     </div>
 </div>
