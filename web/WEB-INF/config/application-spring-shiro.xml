@@ -18,32 +18,25 @@
         <property name="loginUrl" value="/login.jsp" />
         <property name="successUrl" value="/main.jsp" />
         <property name="filterChainDefinitions">
-            <ref bean="shiroFilterChainDefinitions"/>
-        </property>
-    </bean>
-
-    <!-- 定义Shiro安全管理配置 -->
-    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
-        <property name="realm" ref="myRealm" />
-    </bean>
-
-    <!-- Shiro权限过滤过滤器定义 -->
-    <bean name="shiroFilterChainDefinitions" class="java.lang.String">
-        <constructor-arg>
             <value>
                 /=authc
                 /login.html=anon
                 /login.do=anon
                 /bootstrap-3.3.7-dist/**=anon
                 /css/**=anon
-                /editor=anon
+                /editor/**=anon
                 /images/**=anon
                 /jquery/**=anon
                 /js/**=anon
                 /src/**=anon
                 /**=authc
             </value>
-        </constructor-arg>
+        </property>
+    </bean>
+
+    <!-- 定义Shiro安全管理配置 -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="myRealm" />
     </bean>
 
     <bean id="myRealm" class="com.linqiaoli.shiro.MyRealm">
