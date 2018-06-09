@@ -1,3 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: JimsonLung
+  Date: 2018/6/10
+  Time: 1:43
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -20,14 +28,15 @@
 
 <div class="container-fluid">
     <div style="margin: 0 30px">
-        <div class="row" style="margin: 5px 30px;position:fixed;right:0px;top:0px;z-index:999;">
-            <input class="btn btn-primary btn-sm" type="submit" value="保存">
-        </div>
-        <br>
-        <br>
+        <form class="form-inline" action="zhuyuandengji.do">
+            <div class="row" style="margin: 5px 30px;position:fixed;right:0px;top:0px;z-index:999;">
+                <input class="btn btn-primary btn-sm" type="submit" value="保存">
+            </div>
+            <br>
+            <br>
 
-        <!--表单录入-->
-        <form class="form-inline">
+            <!--表单录入-->
+
             <div class="row">
                 <div class="formtitle"><span>基本信息</span></div>
             </div>
@@ -50,7 +59,7 @@
             <div class="row">
                 <div class="form-group">
                     <label>性别</label>
-                    <input name="" type="text" class="form-control"/>
+                    <input name="sex" type="text" class="form-control"/>
                 </div>
                 <div class="form-group">
                     <label>出生日期</label>
