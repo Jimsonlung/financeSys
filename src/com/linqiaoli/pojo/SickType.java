@@ -1,5 +1,8 @@
 package com.linqiaoli.pojo;
 
+/**
+ * 病种实体类
+ */
 public class SickType {
     private String sickTypeId;
     private String name;

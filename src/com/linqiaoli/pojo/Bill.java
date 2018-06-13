@@ -1,5 +1,8 @@
 package com.linqiaoli.pojo;
 
+/**
+ * 账单实体类
+ */
 public class Bill {
     private String billId ;
     private String itemId;

@@ -1,5 +1,8 @@
 package com.linqiaoli.pojo;
 
+/**
+ * 工单实体类
+ */
 public class WorkItem {
     private String itemNo;
     private String userId;

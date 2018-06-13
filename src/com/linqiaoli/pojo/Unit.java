@@ -1,5 +1,8 @@
 package com.linqiaoli.pojo;
 
+/**
+ * 单位实体类
+ */
 public class Unit {
     private String unitId;
     private String userId;

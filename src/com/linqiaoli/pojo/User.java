@@ -1,5 +1,8 @@
 package com.linqiaoli.pojo;
 
+/**
+ * 用户实体类
+ */
 public class User {
     private String userId;
     private String officeId;
