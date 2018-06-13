@@ -37,199 +37,252 @@
 
             <!--表单录入-->
 
+
+            <div class="rightinfo">
+
+                <div class="tools">
+
+                    <ul class="toolbar">
+                        <li class="click"><span><img src="images/t01.png"/></span>新增</li>
+                        <li class="click"><span><img src="images/t02.png"/></span>取消</li>
+                        <li><span><img src="images/t03.png"/></span>最新</li>
+                        <li><span><img src="images/t04.png"/></span>退出</li>
+                    </ul>
+
+
+                    <ul class="toolbar1">
+                        <li><span><img src="images/t05.png"/></span>确定</li>
+                    </ul>
+
+                </div>
+
+
             <div class="row">
                 <div class="formtitle"><span>基本信息</span></div>
             </div>
 
             <div class="row">
                 <div class="form-group">
-                    <label>单号</label>
+                    <label>单号：</label>
                     <input name="itemNo" type="text" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <label>姓名</label>
+                    <label>姓名：</label>
                     <input name="name" type="text" class="form-control"/>
                 </div>
+                <div class="form-group">
+                    <label>年龄：</label>
+                    <input name="name" type="text" class="form-control"/>
+                    <select>
+                        <option >-请选择-</option>
+                    </select>
+                </div>
             </div>
+                <br>
 
-            <div class="row">
-                <div class="formtitle"><span>病人资料</span></div>
-            </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>性别:</label>
+                        <select>
+                            <option >-请选择-</option>
+                            <option >男</option>
+                            <option >女</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>身份证号：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>联系电话：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>联系地址：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+
+
+
+                <div class="row">
+                    <div class="formtitle"><span></span></div>
+                </div>
+
 
             <div class="row">
                 <div class="form-group">
-                    <label>性别</label>
+                    <label>医生：</label>
                     <input name="sex" type="text" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <label>出生日期</label>
+                    <label>住院日：</label>
                     <input name="" type="text" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <label>年龄</label>
+                    <label>科室（病种）：</label>
+                    <input name="" type="text" class="form-control"/>
+                </div>
+            </div>
+                    <br>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>病区：</label>
+                    <input name="sex" type="text" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>住院次数：</label>
                     <input name="" type="text" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <label>病人类型</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>过敏药物</label>
+                    <label>单位：</label>
                     <input name="" type="text" class="form-control"/>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="formtitle"><span>联系地址</span></div>
-            </div>
+                    <br>
 
             <div class="row">
                 <div class="form-group">
-                    <label>民族</label>
+                    <label>房间号：</label>
                     <input name="" type="text" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <label>国家</label>
+                    <label>出生日期:</label>
                     <input name="" type="text" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <label>省份</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>城市</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>地区</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>镇/街道</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>村/居委</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>家庭住址</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>籍贯</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>联系电话</label>
+                    <label>医保疾病编码:</label>
                     <input name="" type="text" class="form-control"/>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="formtitle"><span>住院资料</span></div>
-            </div>
 
-            <div class="row">
-                <div class="form-group">
-                    <label>住院日期</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>住院次数</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>住院科室</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>住院医生</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>在院状态</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>入院病情</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>病区</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>房间号</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>病床号</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>诊断</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="formtitle"><span>家属资料</span></div>
-            </div>
 
-            <div class="row">
-                <div class="form-group">
-                    <label>联系人</label>
-                    <input name="" type="text" class="form-control"/>
+                <div class="row">
+                    <div class="formtitle"><span></span></div>
                 </div>
-                <div class="form-group">
-                    <label>与病人关系</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>联系地址</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <label>联系电话</label>
-                    <input name="" type="text" class="form-control"/>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="formtitle"><span>住院费用</span></div>
-            </div>
 
-            <div class="row">
-                <div class="form-group">
-                    <label>应收合计</label>
-                    <input name="" type="text" class="form-control"/>
+                <div class="row">
+                    <div class="form-group">
+                        <label>病床号:</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>医保证号：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>自付额</label>
-                    <input name="" type="text" class="form-control"/>
+
+                <br>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>公医号:</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>收款方式：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>自负比</label>
-                    <input name="" type="text" class="form-control"/>
+
+                    <br>
+                    <div class="row">
+                        <div class="form-group">
+                            <label>入院状态：</label>
+                            <input name="" type="text" class="form-control"/>
+                        </div>
+                    </div>
+
+                    <br>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>诊断:</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    </div>
+
+                <div class="row">
+                    <div class="formtitle"><span>收费统计</span></div>
                 </div>
-                <div class="form-group">
-                    <label>补收</label>
-                    <input name="" type="text" class="form-control"/>
+
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>应收合计:</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>自付额：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>自负比：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>退款</label>
-                    <input name="" type="text" class="form-control"/>
+
+                    <br>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>补收:</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>退款：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>欠费：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>欠费</label>
-                    <input name="" type="text" class="form-control"/>
+
+                <br>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>预收金额:</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>审核员：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>备注：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>预收金额</label>
-                    <input name="" type="text" class="form-control"/>
+
+
+                <div class="row">
+                    <div class="formtitle"><span></span></div>
                 </div>
-            </div>
+
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>交来:</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label>找赎：</label>
+                        <input name="" type="text" class="form-control"/>
+                    </div>
+                </div>
 
         </form>
     </div>
