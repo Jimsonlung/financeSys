@@ -1,0 +1,45 @@
+
+.formTable{
+    margin: 0px;
+    padding: 0px;
+}
+
+.formTable tbody label{
+    width: 150px;
+    text-align: right;
+    padding:5px;
+}
+
+.formTable tbody select{
+    width: 100%;
+    height: 100%;
+}
+
+.formTable tbody td{
+
+}
+
+.formTable tbody td input{
+    padding-left:5px;
+}
+
+.formtitle {
+    border-bottom: solid 1px #d0dee5;
+    line-height: 35px;
+    position: relative;
+    height: 35px;
+    margin-bottom: 28px;
+}
+
+.formtitle span {
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: solid 3px #66c9f3;
+    float: left;
+    position: absolute;
+    z-index: 100;
+    bottom: -1px;
+    padding: 0 3px;
+    height: 30px;
+    line-height: 30px;
+}

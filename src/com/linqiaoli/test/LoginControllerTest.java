@@ -1,23 +1,31 @@
 package com.linqiaoli.test;
 
+import com.linqiaoli.controller.LoginController;
+import mockit.Expectations;
+import mockit.Mocked;
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
+import org.springframework.ui.Model;
+
+import javax.servlet.http.HttpServletRequest;
 
 import static org.hamcrest.Matchers.is;
 
 public class LoginControllerTest {
+    @Mocked
+    LoginController controller;
+    @Mocked
+    Model model;
 
     @Test
-    public void test(){
-        int a = 1+3;
-        Assert.assertThat("不正确", a, is(4));
-    }
-
-    @Ignore
-    @Test
-    public void test2(){
-        int a = 1+3;
-        Assert.assertThat("不正确", a, is(3));
+    public void LoginTest(@Mocked HttpServletRequest request){
+        new Expectations(){
+            {
+                request.getParameter("name");
+                result = "Jimson";
+            }
+        };
+        String page = controller.login(request, model);
+        Assert.assertThat(page, is("login"));
     }
 }
