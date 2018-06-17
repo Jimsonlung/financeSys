@@ -1580,3 +1580,13 @@ h2 {
     border-radius: 3px;
     behavior: url(js/pie.htc);
 }
+
+
+.label{
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+}
