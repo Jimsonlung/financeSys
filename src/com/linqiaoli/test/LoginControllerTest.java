@@ -5,6 +5,8 @@ import mockit.Expectations;
 import mockit.Mocked;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 import org.springframework.ui.Model;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +19,7 @@ public class LoginControllerTest {
     @Mocked
     Model model;
 
-    @Test
+    @Test(expected = AssertionError.class)
     public void LoginTest(@Mocked HttpServletRequest request){
         new Expectations(){
             {
