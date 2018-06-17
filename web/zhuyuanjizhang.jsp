@@ -81,90 +81,152 @@
 
         <table class="formTable">
             <tbody>
-            <tr><div class="formtitle"><span>住院信息</span></div></tr>
-
-            <tr>
-                <td><label>医生：</label></td>
-                <td><input name="sex" type="text"  /></td>
-                <td><label>住院日：</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>科室（病种）：</label></td>
-                <td><input name="" type="text"  /></td>
-            </tr>
-            <tr>
-                <td><label>病区：</label></td>
-                <td><input name="sex" type="text"  /></td>
-                <td><label>住院次数：</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>单位：</label></td>
-                <td><input name="" type="text"  /></td>
-            </tr>
-            <tr>
-                <td><label>房间号：</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>出生日期:</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>医保疾病编码:</label></td>
-                <td><input name="" type="text"  /></td>
-            </tr>
-            <tr>
-                <td><label>病床号:</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>医保证号：</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>公医号:</label></td>
-                <td><input name="" type="text" /></td>
-            </tr>
-            <tr>
-            <td><label>入院状态：</label></td>
-            <td><input name="" type="text"  /></td>
-            <td><label>诊断:</label></td>
-            <td><input name="" type="text"  /></td>
-                <td><label>收款方式：</label></td>
-                <td><input name="" type="text"  /></td>
-            </tr>
+            <tr><div class="formtitle"><span>处方录入</span></div></tr>
             </tbody>
         </table>
 
+        <table  class="chufangTable" frame="border" cellpadding="15" cellspacing="0" align="" rules="all" width="700" height="150">
+            <tr align="center" bgcolor="">
+                <th>序号</th>
+                <th>编码</th>
+                <th>名称</th>
+                <th>规格</th>
+                <th>单位</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>金额</th>
+            </tr>
+            <tr align="center">
+                <td>1</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+            <tr align="center">
+                <td>2</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+            <tr align="center">
+                <td>3</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+            <tr align="center">
+                <td>4</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+            <tr align="center">
+                <td>5</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+            <tr align="center">
+                <td>6</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+            <tr align="center">
+                <td>7</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+            <tr align="center">
+                <td>8</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+            <tr align="center">
+                <td>9</td>
+                <td>1015</td>
+                <td>保和丸</td>
+                <td>*1瓶/</td>
+                <td>瓶</td>
+                <td>85</td>
+                <td>1</td>
+                <td>85</td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
         <table class="formTable">
             <tbody>
-            <tr><div class="formtitle"><span>收费情况</span></div></tr>
+            <tr><div class="formtitle"><span>收费单据</span></div></tr>
             <tr>
 
                 <td><label>应收合计:</label></td>
                 <td><input name="" type="text"  /></td>
-                <td><label>自付额：</label></td>
+                <td><label>预交金额：</label></td>
                 <td><input name="" type="text"  /></td>
-                <td><label>自负比：</label></td>
-                <td><input name="" type="text"  /></td>
-            </tr>
-            <tr>
-
-                <td><label>补收:</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>退款：</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>欠费：</label></td>
+                <td><label>已记账：</label></td>
                 <td><input name="" type="text"  /></td>
             </tr>
             <tr>
 
-                <td><label>预收金额:</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>审核员：</label></td>
+                <td><label>余额:</label></td>
                 <td><input name="" type="text"  /></td>
                 <td><label>备注：</label></td>
                 <td><input name="" type="text"  /></td>
-            </tr>
-            <tr>
-
-                <td><label>交来:</label></td>
-                <td><input name="" type="text"  /></td>
-                <td><label>找赎：</label></td>
-                <td><input name="" type="text"  /></td>
+                <td><label>收费员:</label></td>
+                <td>
+                    <select>
+                        <option >-请选择-</option>
+                        <option ></option>
+                        <option ></option>
+                    </select>
+                </td>
             </tr>
             </tbody>
         </table>
+
+
+
+
 
 
     </form>

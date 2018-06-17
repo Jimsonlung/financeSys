@@ -1590,3 +1590,9 @@ h2 {
     width: 150px;
     vertical-align: top;
 }
+
+.chufangTable{
+    padding: 50px;
+    margin:auto;
+    text-align:center;
+}
