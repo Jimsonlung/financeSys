@@ -4,17 +4,17 @@ package com.linqiaoli.pojo;
  * 单位实体类
  */
 public class Unit {
-    private String unitId;
+    private String id;
     private String userId;
     private String name;
     private String address;
 
-    public String getUnitId() {
-        return unitId;
+    public String getId() {
+        return id;
     }
 
-    public void setUnitId(String unitId) {
-        this.unitId = unitId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getUserId() {

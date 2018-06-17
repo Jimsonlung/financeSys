@@ -1,9 +1,6 @@
 package com.linqiaoli.pojo;
 
-/**
- * 病种实体类
- */
-public class SickType {
+public class SickBed {
     private String id;
     private String name;
 
@@ -22,4 +19,5 @@ public class SickType {
     public void setName(String name) {
         this.name = name;
     }
+
 }
