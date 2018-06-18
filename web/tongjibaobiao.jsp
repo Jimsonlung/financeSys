@@ -16,7 +16,10 @@
     <script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
 
 </head>
+<style>
 
+    th{ width: 100px;}
+</style>
 
 <body>
 
@@ -27,45 +30,12 @@
     <form action="" style="margin: 40px 40px">
         <table class="formTable">
             <tbody>
-                <tr><div class="formtitle"><span>病人信息</span></div></tr>
+                <tr><div class="formtitle"><span>输入信息</span></div></tr>
                 <tr>
                     <td><label>输入单号：</label></td>
                     <td><input name="itemNo" type="text" /></td>
-                    <td><label>记账号：</label></td>
-                    <td><input name="name" type="text" /></td>
-                    <td><label>病种:</label></td>
-                    <td>
-                        <select>
-                            <option >-请选择-</option>
-                            <option ></option>
-                            <option ></option>
-                        </select>
-                    </td>
-                </tr>
-                <br>
-                <tr>
                     <td><label>姓名：</label></td>
-                    <td><input name="" type="text" /></td>
-                    <td><label>病床号：</label></td>
-                    <td><input name="" type="text" /></td>
-                    <td><label>住院日:</label></td>
-                    <td>
-                        <select>
-                            <option >-请选择-</option>
-                            <option ></option>
-                            <option ></option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>药房:</label></td>
-                    <td>
-                        <select>
-                            <option >-请选择-</option>
-                            <option ></option>
-                            <option ></option>
-                        </select>
-                    </td>
+                    <td><input name="name" type="text" /></td>
                     <td><label>医生:</label></td>
                     <td>
                         <select>
@@ -74,26 +44,31 @@
                             <option ></option>
                         </select>
                     </td>
+                    <td><label>     <input type="button" value="查找"></label></td>
                 </tr>
+
+
+
+
             </tbody>
         </table>
 
 
         <table class="formTable">
             <tbody>
-            <tr><div class="formtitle"><span>发药清单</span></div></tr>
+            <tr><div class="formtitle"><span>病人统计报表</span></div></tr>
             </tbody>
         </table>
 
 
-        <table class="chufangtable" frame="border"  cellpadding="15" valign="middle"  cellspacing="10" align="center"  rules="all" width="700" >
+        <table class="chufangtable" frame="border"  cellpadding="15" valign="middle"  cellspacing="10" align="center"  rules="all" width="100%" >
             <tr  class="chufangtable" align="center"  bgcolor="" >
-                <th>单号</th>
+                <th >单号</th>
                 <th>姓名</th>
                 <th>医生</th>
                 <th>医保号</th>
                 <th>西药费</th>
-                <th>中成药费</th>
+                <th style="width: 200px">中成药费</th>
                 <th>住院费</th>
                 <th>抢救费</th>
                 <th>治疗费</th>
@@ -114,8 +89,9 @@
                 <th>取暖费</th>
                 <th>其他</th>
             </tr>
+            <% for(int i=0;i<10;i++){%>
             <tr align="center">
-                <td></td>
+                <td>12312</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -141,7 +117,8 @@
                 <td></td>
                 <td></td>
             </tr>
-            <tr align="center">
+            <%}%>
+            <!--<tr align="center">
                 <td></td>
                 <td></td>
                 <td></td>
@@ -365,7 +342,7 @@
 
 
 
-        <table class="formTable">
+     <!--   <table class="formTable">
             <tbody>
             <tr><div class="formtitle"><span>收费单据</span></div></tr>
             <tr>
@@ -394,7 +371,7 @@
             </tr>
             </tbody>
         </table>
-
+-->
 
 
 
