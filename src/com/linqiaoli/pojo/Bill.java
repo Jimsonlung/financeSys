@@ -4,18 +4,19 @@ package com.linqiaoli.pojo;
  * 账单实体类
  */
 public class Bill {
-    private String billId ;
+    private String id ;
     private String itemId;
     private String sickTypeId;
     private String userId;
     private String PharmacyId;
+    private String PaymentMethod;
 
-    public String getBillId() {
-        return billId;
+    public String getId() {
+        return id;
     }
 
-    public void setBillId(String billId) {
-        this.billId = billId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getItemId() {
@@ -48,5 +49,13 @@ public class Bill {
 
     public void setPharmacyId(String pharmacyId) {
         PharmacyId = pharmacyId;
+    }
+
+    public String getPaymentMethod() {
+        return PaymentMethod;
+    }
+
+    public void setPaymentMethod(String paymentMethod) {
+        PaymentMethod = paymentMethod;
     }
 }

@@ -3,6 +3,33 @@
         "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 <mapper namespace="com.linqiaoli.dao.WorkItemDao">
     <insert id="save">
-        INSERT INTO work_Item(item_no) VALUES (#{itemNo});
+        INSERT INTO work_Item(
+          item_no,
+          user_id,
+          sick_area_id,
+          sick_type_id,
+          doctor_id,
+          in_hospital_date,
+          sick_room_id,
+          status,
+          diagnosis,
+          sick_bed_id,
+          audit_id,
+          note
+          )
+        VALUES (
+          #{itemNo},
+          #{userId},
+          #{sickArea.id},
+          #{sickType.id},
+          #{doctor.id},
+          #{inHospitalDate},
+          #{sickRoom.id},
+          #{status},
+          #{diagnosis},
+          #{sickBed.id},
+          #{auditId},
+          #{note}
+        )
     </insert>
 </mapper>

@@ -16,8 +16,15 @@ public class User {
     private String medicalInsuranceId;
     private String identityCard;
     private String phone;
-    private String hospitalBedId;
+    private String address; //联系地址
     private String PublicMedicalNumber;
+    private String dadPhone;    //家属电话
+    private String familyAddress;    //家属地址
+    private SickArea sickArea;    //家属地址
+    private String medicareDiseaseCode;    //医保疾病编码
+    private String MedicalDoctorNumber;    //公医号
+    private Unit unit;  //单位
+
 
     public String getUserId() {
         return userId;
@@ -115,20 +122,68 @@ public class User {
         this.phone = phone;
     }
 
-    public String getHospitalBedId() {
-        return hospitalBedId;
-    }
-
-    public void setHospitalBedId(String hospitalBedId) {
-        this.hospitalBedId = hospitalBedId;
-    }
-
     public String getPublicMedicalNumber() {
         return PublicMedicalNumber;
     }
 
     public void setPublicMedicalNumber(String publicMedicalNumber) {
         PublicMedicalNumber = publicMedicalNumber;
+    }
+
+    public String getDadPhone() {
+        return dadPhone;
+    }
+
+    public void setDadPhone(String dadPhone) {
+        this.dadPhone = dadPhone;
+    }
+
+    public String getFamilyAddress() {
+        return familyAddress;
+    }
+
+    public void setFamilyAddress(String familyAddress) {
+        this.familyAddress = familyAddress;
+    }
+
+    public SickArea getSickArea() {
+        return sickArea;
+    }
+
+    public void setSickArea(SickArea sickArea) {
+        this.sickArea = sickArea;
+    }
+
+    public String getMedicareDiseaseCode() {
+        return medicareDiseaseCode;
+    }
+
+    public void setMedicareDiseaseCode(String medicareDiseaseCode) {
+        this.medicareDiseaseCode = medicareDiseaseCode;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getMedicalDoctorNumber() {
+        return MedicalDoctorNumber;
+    }
+
+    public void setMedicalDoctorNumber(String medicalDoctorNumber) {
+        MedicalDoctorNumber = medicalDoctorNumber;
+    }
+
+    public Unit getUnit() {
+        return unit;
+    }
+
+    public void setUnit(Unit unit) {
+        this.unit = unit;
     }
 }
 
