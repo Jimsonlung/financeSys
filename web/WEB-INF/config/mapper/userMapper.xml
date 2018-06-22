@@ -38,4 +38,7 @@
           #{inHospitalCount}
         )
     </insert>
+  <select id="findAll"  resultType="com.linqiaoli.pojo.User">
+    select * from USER
+  </select>
 </mapper>

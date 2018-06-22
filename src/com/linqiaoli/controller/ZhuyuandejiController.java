@@ -30,7 +30,6 @@ public class ZhuyuandejiController {
     @Autowired
     private SickTypeService sickTypeService;
 
-
     @RequestMapping("/zhuyuandengji.do")
     public String zhuyuandengji(User user, WorkItem workItem, HttpServletRequest request){
         user.setUserId(UUID.randomUUID().toString());
@@ -86,7 +85,7 @@ public class ZhuyuandejiController {
 
         //获取病床信息
         List<SickBed> sickBedList = sickBedService.findList();
-        model.addAttribute("sickBedList", sickBedList);
+        model.addAttribute("o", sickBedList);
 
         //获取病种信息
         List<SickType> sickTypeList = sickTypeService.findList();

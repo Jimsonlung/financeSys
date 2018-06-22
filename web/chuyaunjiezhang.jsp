@@ -186,7 +186,7 @@
             </tr>
             </tbody>
         </table>
-        
+
         <table class="formTable">
             <tr><div class="formtitle"><span>收费情况</span></div></tr>
             <tbody>
