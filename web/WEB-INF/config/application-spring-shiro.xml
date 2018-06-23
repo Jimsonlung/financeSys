@@ -23,6 +23,7 @@
                 /login.html=anon
                 /login.do=anon
                 /bootstrap-3.3.7-dist/**=anon
+                /layui-v2.3.0/** = anon
                 /css/**=anon
                 /editor/**=anon
                 /images/**=anon

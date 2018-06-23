@@ -1,20 +1,48 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
     <title>欢迎登录住院收费后台管理系统</title>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <script language="JavaScript" src="js/jquery.js"></script>
+    <script language="JavaScript" src="jquery/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="layui-v2.3.0/layui/css/layui.css" type="text/css">
+    <script language="JavaScript" src="layui-v2.3.0/layui/layui.js"></script>
+
+
     <script>
         $(function () {
             $('.loginbox').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
             $(window).resize(function () {
                 $('.loginbox').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
             })
+
+
         });
+
+        function register() {
+            console.log("c");
+            layui.use(['layer'], function(){
+                var layer = layui.layer;
+
+                layer.open({
+                    title: '账号注册'
+                    ,type: 2
+                    ,area: ['50%', '50%']
+                    ,content: 'register.do'
+                    ,btn: ['注册']
+                    ,btnAlign: 'c'
+                    ,yes: function(index, layero){
+                        layer.msg('注册成功');
+                        layer.close(index);
+                    }
+                });
+
+            });
+        }
+
+
     </script>
 
 </head>
@@ -46,10 +74,11 @@
             <ul>
                 <li><input name="username" type="text" class="loginuser" onclick="JavaScript:this.value=''"/></li>
                 <li><input name="password" type="password" class="loginpwd"  onclick="JavaScript:this.value=''"/></li>
-                <li><input name="" type="submit" class="loginbtn" value="登录"
-                           onclick="javascript:window.location='main.html'"/><label><input name="" type="checkbox" value=""
-                                                                                           checked="checked"/>记住密码</label><label><a
-                        href="#">忘记密码？</a></label></li>
+                <li>
+                    <input name="" type="submit" class="loginbtn" value="登录" onclick="javascript:window.location='main.html'"/>
+                    <label><a href="#" id="register" onclick="register()">注册账号</a></label>
+                    <label><a href="#">忘记密码？</a></label>
+                </li>
             </ul>
         </form>
 
