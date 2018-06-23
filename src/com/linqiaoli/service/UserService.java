@@ -19,4 +19,8 @@ public class UserService {
     public List<User> findAll(){
         return userDao.findAll();
     }
+
+    public void deleteUser(String id) {
+        userDao.delete(id);
+    }
 }

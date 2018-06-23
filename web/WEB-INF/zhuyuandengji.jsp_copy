@@ -1,12 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: JimsonLung
-  Date: 2018/6/10
-  Time: 1:43
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -15,6 +10,11 @@
     <link rel="stylesheet" href="css/jimson.css"/>
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
     <script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+
+
 
 </head>
 
@@ -26,38 +26,38 @@
     <form action="zhuyuandengji.do" method="post" style="margin: 40px 40px">
         <table class="formTable">
             <tbody>
-            <tr><div class="formtitle"><span>基本信息</span></div></tr>
-            <tr>
-                <td><label>单号：</label></td>
-                <td><input id="itemNo" name="itemNo" type="text"/></td>
-                <td><label>姓名：</label></td>
-                <td><input name="name" type="text" /></td>
-                <td><label>年龄：</label></td>
-                <td><input name="age" type="text" /></td>
-            </tr>
-            <br>
-            <tr>
-                <td><label>性别：</label></td>
-                <td>
-                    <select name="sex" >
-                        <option value="">-请选择-</option>
-                        <option value="男">男</option>
-                        <option value="女">女</option>
-                    </select>
-                </td>
-                <td><label>身份证号：</label></td>
-                <td><input name="identityCard" type="text" /></td>
-                <td><label>联系电话：</label></td>
-                <td><input name="phone" type="text" /></td>
-            </tr>
-            <tr>
-                <td><label>联系地址：</label></td>
-                <td><input name="address" type="text"  /></td>
-                <td><label>家属联系电话：</label></td>
-                <td><input name="dadPhone" type="text"  /></td>
-                <td><label>家属联系地址：</label></td>
-                <td><input name="familyAddress" type="text"  /></td>
-            </tr>
+                <tr><div class="formtitle"><span>基本信息</span></div></tr>
+                <tr>
+                    <td><label>单号：</label></td>
+                    <td><input id="itemNo" name="itemNo" type="text"/></td>
+                    <td><label>姓名：</label></td>
+                    <td><input name="name" type="text" /></td>
+                    <td><label>年龄：</label></td>
+                    <td><input name="age" type="text" /></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label>性别：</label></td>
+                    <td>
+                        <select name="sex" >
+                            <option value="">-请选择-</option>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </td>
+                    <td><label>身份证号：</label></td>
+                    <td><input name="identityCard" type="text" /></td>
+                    <td><label>联系电话：</label></td>
+                    <td><input name="phone" type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label>联系地址：</label></td>
+                    <td><input name="address" type="text"  /></td>
+                    <td><label>家属联系电话：</label></td>
+                    <td><input name="dadPhone" type="text"  /></td>
+                    <td><label>家属联系地址：</label></td>
+                    <td><input name="familyAddress" type="text"  /></td>
+                </tr>
             </tbody>
         </table>
 
@@ -159,18 +159,26 @@
             <tbody>
             <tr><div class="formtitle"><span>收费情况</span></div></tr>
             <tr>
+                <td><label>预收金额：</label></td>
+                <td><input name="advance" type="text"  /></td>
+                <td><label>审核员：</label></td>
+                <td><input name="auditId" type="text"  /></td>
+                <td><label>备注：</label></td>
+                <td><input name="note" type="text"  /></td>
+            </tr>
 
-                <td><label>应收合计:</label></td>
-                <td><input name="" type="text"  /></td>
+            <%--<tr>
+                <td><label>应收合计：</label></td>
+                <td><input name="receivable" type="text"  /></td>
                 <td><label>自付额：</label></td>
-                <td><input name="" type="text"  /></td>
+                <td><input name="payment" type="text"  /></td>
                 <td><label>自负比：</label></td>
                 <td><input name="" type="text"  /></td>
             </tr>
             <tr>
 
-                <td><label>补收:</label></td>
-                <td><input name="" type="text"  /></td>
+                <td><label>补收：</label></td>
+                <td><input name="SupplementaryCharge" type="text"  /></td>
                 <td><label>退款：</label></td>
                 <td><input name="" type="text"  /></td>
                 <td><label>欠费：</label></td>
@@ -178,7 +186,7 @@
             </tr>
             <tr>
 
-                <td><label>预收金额:</label></td>
+                <td><label>预收金额：</label></td>
                 <td><input name="" type="text"  /></td>
                 <td><label>审核员：</label></td>
                 <td><input name="" type="text"  /></td>
@@ -187,15 +195,18 @@
             </tr>
             <tr>
 
-                <td><label>交来:</label></td>
+                <td><label>交来：</label></td>
                 <td><input name="" type="text"  /></td>
                 <td><label>找赎：</label></td>
                 <td><input name="" type="text"  /></td>
-            </tr>
+            </tr>--%>
             </tbody>
         </table>
 
 
+        <div style="margin: 10px 30px;position:fixed;right:0px;top:0px;z-index:999;">
+            <input class="btn btn-primary" type="submit" value="保存">
+        </div>
     </form>
 </div>
 

@@ -1,0 +1,44 @@
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.linqiaoli.dao.ZhuyuanfayaoDao">
+    <insert id="save">
+        INSERT INTO user(
+          user_id,
+          name,
+          age,
+          sex,
+          identity_card,
+          phone,
+          address,
+          dad_phone,
+          family_address,
+          unit_id,
+          birthday,
+          medicare_disease_code,
+          medical_insurance_id,
+          medical_doctor_number,
+          in_hospital_count
+          )
+        VALUES (
+          #{userId},
+          #{name},
+          #{age},
+          #{sex},
+          #{identityCard},
+          #{phone},
+          #{address},
+          #{dadPhone},
+          #{familyAddress},
+          #{unit.id},
+          #{birthday},
+          #{medicareDiseaseCode},
+          #{medicalInsuranceId},
+          #{medicalDoctorNumber},
+          #{inHospitalCount}
+        )
+    </insert>
+  <select id="findAll"  resultType="com.linqiaoli.pojo.Zhuyuanfayao">
+    select * from formulation
+  </select>
+</mapper>

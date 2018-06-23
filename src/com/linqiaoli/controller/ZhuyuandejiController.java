@@ -35,6 +35,7 @@ public class ZhuyuandejiController {
         user.setUserId(UUID.randomUUID().toString());
         userService.save(user);
         workItem.setUserId(user.getUserId());
+        workItem.setItemNo(UUID.randomUUID().toString());
 
         String doctorId = request.getParameter("doctorId");
         Doctor doctor = doctorService.get(doctorId);
@@ -61,8 +62,7 @@ public class ZhuyuandejiController {
         workItem.setSickBed(sickBed);
 
         workItemService.save(workItem);
-
-        return "zhuyuandengji";
+        return "forward:user/findall.do";
     }
 
     @RequestMapping("/zydjList.do")
@@ -85,7 +85,7 @@ public class ZhuyuandejiController {
 
         //获取病床信息
         List<SickBed> sickBedList = sickBedService.findList();
-        model.addAttribute("o", sickBedList);
+        model.addAttribute("sickBedList", sickBedList);
 
         //获取病种信息
         List<SickType> sickTypeList = sickTypeService.findList();

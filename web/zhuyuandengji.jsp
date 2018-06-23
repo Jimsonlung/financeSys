@@ -14,6 +14,8 @@
 
     </script>
 
+
+
 </head>
 
 
@@ -37,7 +39,7 @@
                 <tr>
                     <td><label>性别：</label></td>
                     <td>
-                        <select name="sex">
+                        <select name="sex" >
                             <option value="">-请选择-</option>
                             <option value="男">男</option>
                             <option value="女">女</option>
@@ -75,7 +77,7 @@
                     </select>
                 </td>
                 <td><label>住院日：</label></td>
-                <td><input name="inHospitalDate" type="text"  /></td>
+                <td><input name="inHospitalDate" type="date"  style="width:176.43px"/></td>
                 <td><label>科室（病种）：</label></td>
                 <td>
                     <select name="sickTypeId">
@@ -119,7 +121,7 @@
                     </select>
                 </td>
                 <td><label>出生日期：</label></td>
-                <td><input name="birthday" type="text"  /></td>
+                <td><input name="birthday" type="date" style="width:176.43px"  /></td>
                 <td><label>医保疾病编码：</label></td>
                 <td><input name="MedicareDiseaseCode" type="text"  /></td>
             </tr>

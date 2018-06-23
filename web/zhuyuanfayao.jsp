@@ -1,11 +1,12 @@
 <%--
   Created by IntelliJ IDEA.
-  User: JimsonLung
+  zhuyuanfayao: JimsonLung
   Date: 2018/6/10
   Time: 1:43
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="css/jimson.css"/>
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
     <script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
+
 
 </head>
 
@@ -97,6 +99,23 @@
                 <th>金额</th>
                 <th>是否发药</th>
             </tr>
+            <c:forEach var="zhuyuanfayao"   items="${zhuyuanfayaoList}">
+                <tr align="center">
+                    <td><input name="" type="checkbox" value="" checked="checked"/></td>
+                    <td>${zhuyuanfayao.serialNo}</td>
+                    <td>${zhuyuanfayao.drugNo}</td>
+                    <td>${zhuyuanfayao.drugName}</td>
+                    <td>${zhuyuanfayao.specification}</td>
+                    <td>${zhuyuanfayao.unit}</td>
+                    <td>${zhuyuanfayao.unitprice}</td>
+                    <td>${zhuyuanfayao.quantity}</td>
+                    <td>${zhuyuanfayao.moneyNo}</td>
+                    <td>
+                        <input type="button" name="chakan" value="查看" onclick=""/>
+                        <input type="button" name="chakan" value="修改" onclick=""/>
+                    </td>
+                </tr>
+            </c:forEach>
             <tr align="center">
                 <td>1</td>
                 <td>1015</td>
