@@ -83,8 +83,8 @@
             <c:forEach var="user"   items="${userList}">
             <tr>
                <td><input name="" type="checkbox" value="" checked="checked"/></td>
-                <td res="${user.medicalInsuranceId}">${user.medicalInsuranceId}</td>
-                <td>${user.userName}</td>
+                <td>${user.userId}</td>
+                <td>${user.name}</td>
                <td>${user.age}</td>
                 <td>${user.sex}</td>
                 <td>${user.inHospitalCount}</td>
@@ -98,7 +98,7 @@
               <td >
                   <%--<button res="${user.userId}" ><span ><img src="/images/t02.png"/>修改</span></button>--%>
                   <%--<button res="${user.userId}" onclick="deleteUser(this)"><span ><img src="/images/t03.png"/>删除</span></button>--%>
-                  <a href="deleteUser.do?id=${user.userId}" ><span ><img src="/images/t02.png"/>修改</span></a>
+                  <a  res="${user.userId}" href="javascript:void(0)" onclick="edituser(this)"><span ><img src="/images/t02.png"/>修改</span></a>
                   <a href="deleteUser.do?id=${user.userId}" ><span ><img src="/images/t03.png"/>删除</span></a>
                 </td>
             </tr>
@@ -146,14 +146,11 @@
 
 <script type="text/javascript">
     $('.tablelist tbody tr:odd').addClass('odd');
-//function deleteUser(obj) {
-//
-//    var id=$(obj).attr("res")
-//    $.post("deleteUser",{"id":"\""+id+"\""},function () {
-//
-//    }
-//   );
-//}
+function edituser(obj) {
+
+   var id=$(obj).attr("res")
+  location.href="loadUser.do?id="+id;
+}
 </script>
 </body>
 </html>

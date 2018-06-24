@@ -30,9 +30,9 @@ public class ZhuyuandejiController {
     @Autowired
     private SickTypeService sickTypeService;
 
-    @RequestMapping("/zhuyuandengji.do")
+    @RequestMapping("zhuyuandengji.do")
     public String zhuyuandengji(User user, WorkItem workItem, HttpServletRequest request){
-        user.setUserId(UUID.randomUUID().toString());
+        user.setUserId(UUID.randomUUID().toString().replace("-","" ));
         userService.save(user);
         workItem.setUserId(user.getUserId());
         workItem.setItemNo(UUID.randomUUID().toString());

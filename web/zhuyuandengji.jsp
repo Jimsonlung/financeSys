@@ -23,13 +23,13 @@
 
 
 <div>
-    <form action="zhuyuandengji.do" method="post" style="margin: 40px 40px">
+    <form action="user/zhuyuandengji.do" method="post" style="margin: 40px 40px">
         <table class="formTable">
             <tbody>
                 <tr><div class="formtitle"><span>基本信息</span></div></tr>
                 <tr>
-                    <td><label>单号：</label></td>
-                    <td><input id="itemNo" name="itemNo" type="text"/></td>
+                    <%--<td><label>单号：</label></td>
+                    <td><input id="itemNo" name="itemNo" type="text"/></td>--%>
                     <td><label>姓名：</label></td>
                     <td><input name="name" type="text" /></td>
                     <td><label>年龄：</label></td>

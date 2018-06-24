@@ -38,9 +38,36 @@
           #{inHospitalCount}
         )
     </insert>
+
+
+    <update id="updateUser" >
+        UPDATE USER
+        SET
+        name=#{name},
+        age=#{age},
+        sex=#{sex},
+        identity_card=#{identityCard},
+        phone=#{phone},
+        address=#{address},
+        dad_phone=#{dadPhone},
+        family_address=#{familyAddress},
+        unit_id=#{unit},
+        birthday=#{birthday},
+        medicare_disease_code=#{medicareDiseaseCode},
+    medical_insurance_id=#{medicalInsuranceId},
+    medical_doctor_number=#{MedicalDoctorNumber},
+    in_hospital_count=#{inHospitalCount}
+    WHERE user_id=#{userId}
+
+</update>
+
+
   <delete id="delete">
     DELETE  FROM  USER  WHERE  user_id=#{id}
   </delete>
+  <select id="getUserbyid" resultType="com.linqiaoli.pojo.User">
+    select * from USER WHERE user_id=#{id};
+  </select>
   <select id="findAll"  resultType="com.linqiaoli.pojo.User">
     select * from USER
   </select>
